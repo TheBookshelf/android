@@ -6,6 +6,13 @@ import android.os.Bundle;
 import android.support.annotation.Nullable;
 
 public class Splash extends Activity{
+
+    @Override
+    protected void onPause() {
+        super.onPause();
+        finish();
+    }
+
     @Override
     protected void onCreate(@Nullable Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -25,5 +32,7 @@ public class Splash extends Activity{
         };
 
         timer.start();
+
+
     }
 }
