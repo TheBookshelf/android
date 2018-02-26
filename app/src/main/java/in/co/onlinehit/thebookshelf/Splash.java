@@ -30,9 +30,6 @@ public class Splash extends Activity{
                 }
             }
         };
-
         timer.start();
-
-
     }
 }
